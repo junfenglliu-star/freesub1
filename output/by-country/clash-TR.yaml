@@ -17,26 +17,29 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: myda06.api3-max.ru
+  server: 19990ed1bb252449.IROnlY4l.Ir
   port: 443
   udp: true
   type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
-  flow: xtls-rprx-vision
+  uuid: bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7
   tls: true
-  servername: myda06.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew
+    short-id: 37d86205006fe1fb
+  servername: storage-p2.googleapis.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: myda08.api3-max.ru
+  server: 78.135.73.47
   port: 443
   udp: true
   type: vless
-  uuid: cdd6bfce-781a-4454-b7d5-4778abb5c24f
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
   flow: xtls-rprx-vision
   tls: true
-  servername: myda08.api3-max.ru
-  skip-cert-verify: false
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
