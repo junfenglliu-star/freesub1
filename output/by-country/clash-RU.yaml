@@ -5,23 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 188.114.97.3
-  port: 2083
+  server: 162.159.24.131
+  port: 2082
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: newwk1.f1w.de5.net
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 104.18.46.234
-  port: 2086
+  server: 172.64.229.170
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -31,100 +27,37 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 172.67.141.75
+  server: 104.21.36.36
   port: 443
   udp: true
   type: vless
-  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  uuid: 41750e18-7143-49a3-bdac-4edcb3c8b8f3
   tls: true
-  servername: frosty-pond-7436.shhabbyat914.workers.dev
+  servername: h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /NmrU9ImDG7jA7oFEem
+    path: /vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560
     headers:
-      Host: frosty-pond-7436.shhabbyat914.workers.dev
+      Host: h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 45.9.118.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff2936d3-caa4-4b79-bb96-1475bd39ceda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 113.30.154.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff2936d3-caa4-4b79-bb96-1475bd39ceda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 113.30.154.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff2936d3-caa4-4b79-bb96-1475bd39ceda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: sellflow.org
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 62.181.53.170
-  port: 2055
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 9qGcNiZj4uCi7DGSjxlg5Q
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: IcovoXEMyjfGjN9RenzKs0/iPaZ3vtk9fkxJ0s/R5vw=
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  server: 138.124.254.232
-  port: 443
-  udp: true
-  type: hysteria2
-  password: fba73f98-777a-42a6-83c0-7d1f6f070e8d
-  sni: crt.dodopanel.biz
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  server: 83.222.8.125
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yyH7Fyfh1ULPH4L5mFVtqPf_rB1IY6jwDgOuIRY7-wA
-    short-id: ccbe97abe7
-  servername: ozone.nl
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  server: china.letsconnectpoint.com
+  sni: 91.240.86.70
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 139.28.168.201
   port: 443
   udp: true
   type: vless
@@ -135,34 +68,7 @@ proxies:
     public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  server: 94.249.187.46
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  server: 45.12.75.242
-  port: 26424
-  udp: true
-  type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
-  tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
-  server: ru.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru.xiaoliyu.cyou
-  skip-cert-verify: true
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,15 +80,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -194,14 +91,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 13 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 14 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 15 - xiaohe
 rules:
 - MATCH,PROXIES
