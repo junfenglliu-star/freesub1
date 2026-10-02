@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  server: 172.64.42.85
-  port: 80
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  server: 172.64.52.6
+  port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,53 +15,30 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: fd16b694-tmm5c0-unh4sc-xm0q.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  sni: fd16b694-tmm5c0-unh4sc-xm0q.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  server: 16113553-tmm5c0-twuk0i-1hzyr.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-  sni: 16113553-tmm5c0-twuk0i-1hzyr.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 04 (移动家宽) - xiaohe
-  server: 31.77.114.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Zli2oz4Y11pvkrGK71XDcbp1OWIPzK2FYhUXQvl1yiI
-  servername: aken.nightfall.best
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
-  server: test.keoplentuio.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  server: 178.83.46.216
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
-  server: hinet1.2yly.com
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: 3f86f2b4-tmm5c0-tpaqgu-1smhu.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
+  sni: 3f86f2b4-tmm5c0-tpaqgu-1smhu.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  server: 51cc2d6e-tmm5c0-tw661e-1isea.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
+  sni: 51cc2d6e-tmm5c0-tw661e-1isea.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: 118.167.235.241
   port: 24215
   udp: true
   type: vless
@@ -70,30 +47,49 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
+  client-fingerprint: qq
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
+  server: ttww11.bpca2026.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  sni: ttww11.bpca2026.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /images
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇳🇱 荷兰 (Netherlands) 04 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  - 🇳🇱 荷兰 (Netherlands) 04 (移动家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
