@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-      "server": "51.75.67.209",
-      "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "fde10e39-48bb-4dcf-b3ba-71d711323a54",
+      "security": "auto",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
@@ -19,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
