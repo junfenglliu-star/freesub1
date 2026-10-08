@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: us3.xiaoliyu.cyou
-  port: 18333
+- name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  server: brb.nnpy.org
+  port: 11100
   udp: true
   type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: us3.xiaoliyu.cyou
+  password: df8d55f9-fb51-442d-902a-bf8160dc051b
+  sni: brb.nnpy.org
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 01 - xiaohe
 rules:
 - MATCH,PROXIES

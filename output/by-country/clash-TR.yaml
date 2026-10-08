@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+  server: 206.1.100.83
+  port: 25178
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 85.192.48.142
   port: 443
   udp: true
@@ -16,25 +23,15 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 206.1.100.83
-  port: 25178
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: ADzlhA3ndouUCY3JbLddR/jwgYY7IDGc1T+5DuCix9Y=:KyFe2akGo5hcrswbMkD2+BM52si+D7lzyccZFTd4xaU=
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 38.180.209.248
-  port: 443
+  server: 162.249.126.39
+  port: 9443
   udp: true
-  type: vless
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cloud.surfweb.club
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 151.241.226.201
   port: 2053
@@ -46,7 +43,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 78.135.73.47
   port: 443
@@ -61,30 +58,14 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  server: 162.249.126.39
-  port: 9443
+  server: 87.120.106.133
+  port: 443
   udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
+  type: vless
+  uuid: d9fbf9a7-1f88-428b-bb3e-3074681e44c9
+  tls: true
+  servername: es3siwxee705.dx4x.com
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
-  server: bale.xv98.ir
-  port: 5051
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 68mL2QkZEBlxWa3hcslGDw
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,8 +77,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,7 +88,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 rules:
 - MATCH,PROXIES

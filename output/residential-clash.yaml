@@ -4,13 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  server: p141.panda001.net
-  port: 4652
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 203.137.165.164
+  port: 57554
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vless
+  uuid: 72a672a7-ad57-4083-a79a-66a856cecd12
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
   server: test.keoplentuio.xyz
   port: 2053
@@ -18,7 +25,22 @@ proxies:
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
-  server: hinet1.2yly.com
+  server: sbgfgov.vip23.wogacnmnagfwgov.com
+  port: 11223
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
+  server: 61.230.162.88
   port: 24215
   udp: true
   type: vless
@@ -27,22 +49,26 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) R50 - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
