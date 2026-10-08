@@ -16,9 +16,9 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - xiaohe
-  server: es.srv.dvzh.net
+  server: 103.240.146.87
   port: 443
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
     public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
     short-id: e4e77e76e6e49da7
   servername: es.srv.dvzh.net
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 03 - xiaohe
   server: 85.209.158.187
   port: 443
@@ -42,7 +42,7 @@ proxies:
     public-key: 4aN0Mr6AENm6-K7mokUioB8xe99zKP4UDHnzHtWEvBU
     short-id: eb1a94ed
   servername: isr.vpnskyline.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
